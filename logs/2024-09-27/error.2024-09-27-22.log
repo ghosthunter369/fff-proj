@@ -1,4 +1,4 @@
-2024-09-27 23:09:47,848 ERROR [http-nio-63040-exec-2][GlobalExceptionHandler.java:24] - 【系统异常】收费价格必须大于0
+2024-09-27 22:35:11,644 ERROR [http-nio-63040-exec-2][GlobalExceptionHandler.java:24] - 【系统异常】收费价格必须大于0
 com.xuecheng.base.exception.XueChengPlusException: 收费价格必须大于0
 	at com.xuecheng.base.exception.XueChengPlusException.cast(XueChengPlusException.java:31)
 	at com.xuecheng.content.service.impl.CourseBaseInfoServiceImpl.saveCourseMarket(CourseBaseInfoServiceImpl.java:145)
@@ -13,7 +13,7 @@ com.xuecheng.base.exception.XueChengPlusException: 收费价格必须大于0
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
-	at com.xuecheng.content.service.impl.CourseBaseInfoServiceImpl$$EnhancerBySpringCGLIB$$6dfa2d82.createCourseBase(<generated>)
+	at com.xuecheng.content.service.impl.CourseBaseInfoServiceImpl$$EnhancerBySpringCGLIB$$faec6997.createCourseBase(<generated>)
 	at com.xuecheng.content.api.CourseCategoryController.createCourseBase(CourseCategoryController.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

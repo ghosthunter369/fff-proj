@@ -1,0 +1,54 @@
+POST http://localhost:63040/content/course/list?pageNo=1&pageSize=10
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "auditStatus": "",
+  "courseName": "",
+  "publishStatus": ""
+}
+
+<> 2024-09-27T092808.200.json
+
+###
+
+POST http://localhost:63040/content/course/list?pageNo=1&pageSize=10
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "auditStatus": "",
+  "courseName": "",
+  "publishStatus": ""
+}
+
+<> 2024-09-27T092717.500.json
+
+###
+
+POST http://localhost:63040/content/course/list?pageNo=1&pageSize=10
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-09-27T092659.500.json
+
+###
+
+POST http://localhost:8080/course/list
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-09-27T092507.404.txt
+
+###
+

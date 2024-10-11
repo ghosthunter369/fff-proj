@@ -1,5 +1,6 @@
 package com.xuecheng.content.api;
 
+import com.xuecheng.base.exception.ValidationGroups;
 import com.xuecheng.content.model.dto.AddCourseDto;
 import com.xuecheng.content.model.dto.CourseBaseInfoDto;
 import com.xuecheng.content.model.dto.CourseCategoryTreeDto;
@@ -7,6 +8,8 @@ import com.xuecheng.content.service.CourseBaseInfoService;
 import com.xuecheng.content.service.CourseCategoryService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,9 +30,10 @@ public class CourseCategoryController {
 
     @ApiOperation("新增课程基础信息")
     @RequestMapping("course")
-    public CourseBaseInfoDto createCourseBase(@RequestBody AddCourseDto addCourseDto) {
+    public CourseBaseInfoDto createCourseBase(@RequestBody @Validated({ValidationGroups.Inster.class}) AddCourseDto addCourseDto) {
         Long id = 1234L;
         CourseBaseInfoDto courseBase = courseBaseInfoService.createCourseBase(id, addCourseDto);
         return courseBase;
     }
+
 }
